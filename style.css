@@ -1,0 +1,52 @@
+body {
+  background-color: #00c858; /* Green background color */
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #00a848; /* Dark green header background color */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.account-info {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.balance {
+  margin: 10px 0;
+}
+
+.interaction {
+  text-align: center;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #00a848;
+}
+
+button {
+  background-color: #00a848; /* Green button color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #00783e; /* Dark green hover color */
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
