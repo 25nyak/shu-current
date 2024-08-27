@@ -1,63 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shu current</title>
-
-    <!-- Load web3.js from CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.6/dist/web3.min.js"></script>
-
-    <style>
-        /* Add your CSS styling here */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff; /* Light blue color, adjust as needed */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        .container {
-            text-align: center;
-            background-color: #fff; /* White background color, adjust as needed */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        button {
-            background-color: #4caf50; /* Green color, adjust as needed */
-            color: #fff;
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-    </style>
+    <title>Enhanced Staking DApp</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="container">
-        <h1>shu current</h1>
-        <p>Account Address: <span id="accountAddress">Loading...</span></p>
-        <p>Staked Balance: <span id="stakedBalance">Loading...</span> Tokens</p>
-        <p>Rewards: <span id="rewards">Loading...</span> Tokens</p>
+    <div id="app">
+        <h1>Enhanced Staking DApp</h1>
 
-        <button onclick="stake()">Stake Tokens</button>
-        <button onclick="unstake()">Unstake Tokens</button>
+        <!-- Connect Wallet Button -->
+        <button id="connectWalletButton">Connect Wallet</button>
 
-        <!-- Add other HTML elements as needed -->
+        <!-- Display Connected Account -->
+        <p>Connected Account: <span id="accountAddress">Not connected</span></p>
 
+        <!-- Display Staked Balance -->
+        <p>Staked Balance: <span id="stakedBalance">0</span></p>
+
+        <!-- Display Rewards -->
+        <p>Rewards: <span id="rewards">0</span></p>
+
+        <!-- Stake Tokens Section -->
+        <div>
+            <input type="text" id="stakeAmount" placeholder="Amount to Stake">
+            <button id="stakeButton">Stake</button>
+        </div>
+
+        <!-- Unstake Tokens Section -->
+        <div>
+            <input type="text" id="unstakeAmount" placeholder="Amount to Unstake">
+            <button id="unstakeButton">Unstake</button>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Include your enhanced script.js file -->
+    <script src="script.js" type="module"></script>
 </body>
-
 </html>
